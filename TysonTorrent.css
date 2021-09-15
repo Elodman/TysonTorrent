@@ -1,0 +1,147 @@
+body {
+    background-image: url('bc.jpg');
+    background-size: cover;
+}
+
+
+#felirat {
+    color:  greenyellow;
+    font-family: 'Fredericka the Great', cursive;
+    position: absolute;
+    left: 6%;
+}
+#felirat:hover {
+    text-shadow: 5px 5px 15px greenyellow;
+    cursor: pointer;
+}
+
+.nav-item {
+    text-decoration: none; 
+    font-size: 25px; 
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.nav-item:hover {
+    text-shadow: 0px 3px 6px rgb(0, 255, 34);
+    font-size: 26px;
+    border-bottom: 2px solid greenyellow;
+    transition: 0.25s;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+#menunagysag {
+    min-height: 70px;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#fullscreen {
+    color: greenyellow;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#close {
+    color: red;
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+#fullscreen:hover , #close:hover {
+    font-size: 42px;
+    transition: 0.3s;
+}
+
+#lista {
+    width: 40vw;
+    margin-top: 10%;
+    text-align: center;
+    border: 5px solid rgb(30, 31, 30);
+    border-radius:50px ;
+    box-shadow: 0px 0px 15px greenyellow;
+}
+
+label {
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow:0px 5px 15px greenyellow;
+    border: 2px dashed greenyellow;
+    transition: 0.3s;
+}
+
+#btn {
+    width: auto; 
+    height: auto; 
+    font-weight: bold; 
+    font-family: 'Acme', sans-serif;
+    color: greenyellow; 
+    background-color:black; 
+    letter-spacing: 3px;
+}
+
+#search {
+    width: 30%;
+    height: 4vh;
+    font-size: 26px; 
+    outline: none; 
+    border: 2px solid black;
+}
+
+#letoltes {
+    margin-top: 6%;
+    background-color: rgb(70, 70, 70);
+    height: 500px ;
+    width: 800px;
+    border: 5px solid black;
+    border-radius: 25px ;
+}
+
+#letoltesgomb {
+    background-color: rgb(21, 255, 0);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 30px;
+    width: 200px;
+    margin-top: 10px;
+    font-family: 'Acme', sans-serif;
+    font-weight: 600;
+}
+
+#letoltesgomb:hover {
+    border-radius: 25px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 10px black;
+}
+
+
+	::-webkit-scrollbar {width:20px;}
+
+	::-webkit-scrollbar-track {
+    	background-image: linear-gradient(rgb(49, 49, 49) -20%, black 60%);
+    	box-shadow: inset 0 0 2.5px 2px #33ff00 ;}
+    
+	::-webkit-scrollbar-thumb {background-image: linear-gradient(rgb(9, 255, 0), rgb(0, 139, 63));
+        border-radius:25px;
+        box-shadow: inset 0 0 2.5px 2px #b3ff00d7;}
