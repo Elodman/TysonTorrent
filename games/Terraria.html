@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TysonTorrent</title>
+    <link rel="stylesheet" type="text/css" href="/TysonTorrent.css">
+    <link rel="icon" type="image/png" href="TTlogoglowing.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0b8b0c92c1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="menu" class="navbar navbar-dark bg-dark">
+
+        <img src="/TTlogo.png" width="100" height="100" class="d-inline-block align-top" alt="Logo">
+        <h1 id="felirat">TysonTorrent</h1>
+        <span onclick="valtas()">
+            <i id="fullscreen" class="fas fa-expand" onclick="openFullscreen();"></i>
+        </span>
+        <span onclick="valtas2()">
+            <i id="close" class="fas fa-compress" onclick="closeFullscreen();"></i>
+        </span>
+
+        <a href="user.html"><i id="usericon" class="fas fa-user-ninja"></i></a>
+
+    </nav>
+    <nav id="menunagysag" style="background-color: rgb(0, 0, 0);" class="navbar navbar-expand-lg">
+        <ul style="list-style-type: none;" class="navbar-nav">
+
+            <li class="nav-item">
+                <a style="text-decoration: none; color: greenyellow;" href="TysonTorrent.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a style="text-decoration: none;color: greenyellow;" href="Games.html">Games</a>
+            </li>
+            <li class="nav-item">
+                <a style="text-decoration: none;color: greenyellow;" href="">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a style="text-decoration: none;color: greenyellow;" href="">Computer</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="d-flex justify-content-center">
+        <div style="background-image: url('/images/Terraria.png'); background-size: cover;" id="letoltes">
+            <h1 style="text-align: center;">Terraria</h1>
+            <div class="d-flex justify-content-center">
+                <a id="letoltesgomb" href="files/Terraria v1.3.5.3.torrent" download="">download</a>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script>
+
+        var nyit = document.getElementById('fullscreen');
+        var zár = document.getElementById('close');
+
+        function valtas() {
+            nyit.style.display = "none";
+            zár.style.display = "block";
+        }
+
+        function valtas2() {
+            nyit.style.display = "block";
+            zár.style.display = "none";
+        }
+
+
+
+
+        var elem = document.documentElement;
+        function openFullscreen() {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) {
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        }
+
+        function closeFullscreen() {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
