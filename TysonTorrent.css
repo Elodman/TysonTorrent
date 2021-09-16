@@ -1,5 +1,5 @@
 body {
-    background-image: url('/bc.jpg');
+    background-image: url('bc.jpg');
     background-size: cover;
 }
 
@@ -40,10 +40,52 @@ body {
     z-index: 10;
 }
 
+#usericon {
+    color: chartreuse;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-size: 35px;
+}
+
+#usericon:hover {
+    color: rgb(255, 8, 0);
+    transition: 0.3s;
+    font-size: 37px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px greenyellow;
+}
+
+#hide1, #hide2 {
+    position: relative;
+    top: -22px;
+    right: -75px;
+
+
+}
+
+
+#hide1 {
+    display: none;
+}
+
+#hide1:hover, #hide2:hover {
+    cursor: pointer;
+}
+
 button {
     position: absolute;
     right: 0;
     top: 0;
+}
+
+form {
+    margin-top: 5%;
+    border-radius:25px ;
+    background-size: cover;
+    background-image: url('loginbc.jpg');
+    height: 600px;
+    width: 800px;
 }
 
 #fullscreen {

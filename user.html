@@ -18,7 +18,7 @@
 
     <nav id="menu" class="navbar navbar-dark bg-dark">
 
-        <img src="/TTlogo.png" width="100" height="100" class="d-inline-block align-top" alt="Logo">
+        <img src="TTlogo.png" width="100" height="100" class="d-inline-block align-top" alt="Logo">
         <h1 id="felirat">TysonTorrent</h1>
         <span onclick="valtas()">
             <i id="fullscreen" class="fas fa-expand" onclick="openFullscreen();"></i>
@@ -40,26 +40,36 @@
                 <a style="text-decoration: none;color: greenyellow;" href="Games.html">Games</a>
             </li>
             <li class="nav-item">
-                <a style="text-decoration: none;color: greenyellow;" href="">Movies</a>
+                <a style="text-decoration: none;color: greenyellow;" href="">Programs</a>
             </li>
             <li class="nav-item">
-                <a style="text-decoration: none;color: greenyellow;" href="">Computer</a>
+                <a style="text-decoration: none;color: greenyellow;" href="">Movies</a>
             </li>
         </ul>
     </nav>
 
 
-    <main class="d-flex justify-content-center">
-        <div style="background-image: url('images/Terraria.png'); background-size: cover;" id="letoltes">
-            <h1 style="text-align: center;">Terraria</h1>
-            <div class="d-flex justify-content-center">
-                <a id="letoltesgomb" href="files/" download="">download</a>
+    <main>
+<div class="d-flex justify-content-center">
+        <form class="box">
+            <div style="margin-top: 20%;" class="d-flex justify-content-center">
+            <input type="text" placeholder="Enter username" id="felhasznalonev"><br>
             </div>
-        </div>
+            <div class="d-flex justify-content-center">
+            <input type="password" placeholder="Enter password" class="jelszo" id="myInput">
+            </div>
+            <span class="d-flex justify-content-center" class="eye" onclick="myFunction()">
+                <i id="hide1" class="fas fa-eye"></i>
+                <i id="hide2" class="fas fa-eye-slash"></i>
+            </span>
+            <div class="d-flex justify-content-center">
+            <input type="button" id="btn" value="Login" onclick="validate()"><br><br>
+            </div>
+        </form>
+    </div>
+        
+
     </main>
-
-
-
 
     <script>
 
@@ -99,6 +109,38 @@
                 document.msExitFullscreen();
             }
         }
+
+        function validate() {
+            var hatter = document.getElementsByClassName("box")[0];
+            var username = document.getElementById("felhasznalonev").value;
+            var password = document.getElementsByClassName("jelszo")[0].value;
+            if (username == "Elodman" && password == "asd") {
+                hatter.style.display = "none";
+                
+            }
+            else {
+                alert("Helytelen bejelntkezés!")
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            var y = document.getElementById("hide1");
+            var z = document.getElementById("hide2");
+
+
+            if (x.type === 'password') {
+                x.type = "block";
+                y.style.display = "block";
+                z.style.display = "none";
+            }
+            else {
+                x.type = "password";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+
 
     </script>
 

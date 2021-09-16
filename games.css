@@ -38,6 +38,23 @@
     z-index: 10;
 }
 
+#usericon {
+    color: chartreuse;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    font-size: 35px;
+}
+
+#usericon:hover {
+    color: rgb(255, 8, 0);
+    transition: 0.3s;
+    font-size: 37px;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px greenyellow;
+}
+
+
 button {
     position: absolute;
     right: 0;
